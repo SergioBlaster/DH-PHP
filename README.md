@@ -1,2 +1,2 @@
 # DH-PHP
-Digital House PHP classes
+Digital House PHP classroom
