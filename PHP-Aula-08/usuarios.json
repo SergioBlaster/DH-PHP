@@ -1,0 +1,16 @@
+{
+  "usuarios": [
+    {
+      "nome": "Sergio Gomes",
+      "email": "sergioblaster@gmail.com",
+      "senha": "$2y$10$8JTcWYwanIyjo0Wl5H2wkeWYzkdrh3CI1kVSyqnZUAlQAdefhedzS",
+      "imagem": "assets/img/uploads/vader.jpeg"
+    },
+    {
+      "nome": "Luke Skywalker",
+      "email": "marcelo@digitalhouse.com",
+      "senha": "$2y$10$yMcmTNgmOWekk190pUEzYOOszWEOjWcbKr3dCyU.amd2BA1FFldN.",
+      "imagem": "assets/img/uploads/luke.jpeg"
+    }
+  ]
+}
