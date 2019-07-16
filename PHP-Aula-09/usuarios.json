@@ -1,0 +1,11 @@
+{
+  "usuarios": [
+    {
+      "nome": "Sergio Gomes",
+      "email": "sergioblaster@gmail.com",
+      "senha": "$2y$10$ht09sDTzIC211Y86nNGjSO5izpA9cEUYJIAuacvFcBFTjrdSYmNim",
+      "imagem": "assets/img/uploads/vader.jpeg",
+      "nivelAcesso": 1
+    }
+  ]
+}
