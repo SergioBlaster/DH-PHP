@@ -17,7 +17,7 @@
                             </ul>
                         </li>
                     </ul>
-                    <?php endif; ?>
+                <?php endif; ?>
                 <form id="formulario" class="navbar-form navbar-left" role="search">
                     <div class="form-group">
                         <input id="barraBusca" type="text" class="form-control" placeholder="Pesquise Aqui">
@@ -27,8 +27,9 @@
                 <p class="navbar-text navbar-right">
                     Logado como
                     <strong>
-                        <a href="#" class="navbar-link"><?php echo $_SESSION["nome"]; ?></a>
+                        <?php echo $_SESSION["nome"]; ?></a>
                     </strong>
+                    <a href="inc/logout.php" class="btn btn-warning">Sair</a>
                 </p>
             </div>
         </div>
