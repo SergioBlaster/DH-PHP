@@ -3,9 +3,9 @@ require_once("Equipamento.php");
 
 class AparelhoDeSom extends Equipamento
 {
-    public $volume;
-    public $numeroDeFaixa;
-    public $usb;
+    private $volume;
+    private $numeroDeFaixa;
+    private $usb;
 
     public function __construct()
     {
