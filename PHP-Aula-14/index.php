@@ -3,86 +3,90 @@
 <?php require_once("inc/head.php"); ?>
 
 <body>
-    <?php require_once("inc/header.php"); ?>
+  <?php require_once("inc/header.php") ?>
 
-    <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
-        <div class="carousel-inner">
-            <div class="carousel-item active">
-                <img src="img/FreeDelivery.jpg" class="d-block w-100" alt="...">
-            </div>
-            <div class="carousel-item">
-                <img src="img/Motoboy.jpg" class="d-block w-100" alt="...">
-            </div>
-            <div class="carousel-item">
-                <img src="img/UberEats.jpg" class="d-block w-100" alt="...">
-            </div>
+  <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img class="d-block w-100" src="img/free-delivery.jpg" alt="Primeiro Slide">
+      </div>
+      <div class="carousel-item">
+        <img class="d-block w-100" src="img/motoboy-delivery.jpg" alt="Segundo Slide">
+      </div>
+      <div class="carousel-item">
+        <img class="d-block w-100" src="img/uber-eats.jpg" alt="Terceiro Slide">
+      </div>
+    </div>
+    <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Anterior</span>
+    </a>
+    <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Próximo</span>
+    </a>
+  </div>
+
+  <div class="container">
+    <div class="mt-5">
+      <h1>Notícias</h1>
+      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. At animi quasi recusandae culpa optio delectus excepturi quibusdam quae mollitia hic! Maiores, enim iste? Ipsam, nobis! Earum laudantium fugiat reiciendis similique!</p>
+      <div class="card-deck">
+        <div class="card">
+          <img class="card-img-top" src="img/free-delivery.jpg" alt="Imagem de capa do card">
+          <div class="card-body">
+            <h5 class="card-title">Título do card</h5>
+            <p class="card-text">Este é um card mais longo com suporte a texto embaixo, que funciona como uma introdução a um conteúdo adicional. Este conteúdo é um pouco maior.</p>
+            <p class="card-text"><small class="text-muted">Atualizados 3 minutos atrás</small></p>
+          </div>
         </div>
-        <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="sr-only">Previous</span>
-        </a>
-        <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="sr-only">Next</span>
-        </a>
+        <div class="card">
+          <img class="card-img-top" src="img/motoboy-delivery.jpg" alt="Imagem de capa do card">
+          <div class="card-body">
+            <h5 class="card-title">Título do card</h5>
+            <p class="card-text">Este é um card com suporte a texto embaixo, que funciona como uma introdução a um conteúdo adicional.</p>
+            <p class="card-text"><small class="text-muted">Atualizados 3 minutos atrás</small></p>
+          </div>
+        </div>
+        <div class="card">
+          <img class="card-img-top" src="img/uber-eats.jpg" alt="Imagem de capa do card">
+          <div class="card-body">
+            <h5 class="card-title">Título do card</h5>
+            <p class="card-text">Este é um card maior com suporte a texto embaixo, que funciona como uma introdução a um conteúdo adicional. Este card tem o conteúdo ainda maior que o primeiro, para mostrar a altura igual, em ação.</p>
+            <p class="card-text"><small class="text-muted">Atualizados 3 minutos atrás</small></p>
+          </div>
+        </div>
+      </div>
     </div>
 
-    <div class="container mt-5">
-        <h1>Cards</h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga adipisci aliquam aliquid rerum distinctio quo vitae, voluptatum architecto iure, voluptate minus sequi hic libero officia provident itaque nemo ea debitis.</p>
-        <div class="card-deck">
-            <div class="card">
-                <img src="img/FreeDelivery.jpg" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-                </div>
-            </div>
-            <div class="card">
-                <img src="img/Motoboy.jpg" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
-                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-                </div>
-            </div>
-            <div class="card">
-                <img src="img/UberEats.jpg" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
-                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-                </div>
-            </div>
+    <form class="mt-5" action="utils/salvarContato.php" method="POST">
+      <h1>Preencha o formulário para entrar em contato</h1>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum reiciendis eveniet, similique obcaecati qui corporis dolore quisquam placeat incidunt facilis? Facere aspernatur dolorum vitae sequi ut at doloremque, quia aut.</p>
+      <div class="form-row">
+        <div class="form-group col-md-6">
+          <label for="input-nome">Nome</label>
+          <input type="text" class="form-control" name="nome" id="input-nome" placeholder="Insira seu nome">
         </div>
+        <div class="form-group col-md-6">
+          <label for="input-email">E-mail</label>
+          <input type="email" class="form-control" name="email" id="input-email" placeholder="Email@example.com">
+        </div>
+        <div class="form-group col-md-12">
+          <label for="textarea-mensagem">Mensagem</label>
+          <textarea class="form-control" name="mensagem" id="textarea-mensagem" rows="10" placeholder="Insira sua mensagem aqui..."></textarea>
+        </div>
+      </div>
+      <button type="submit" class="btn btn-primary">Enviar</button>
+    </form>
 
-        <form action="utils/salvarContato.php" method="POST" class="mt-5">
-            <h1>Preencha o formulário para entrar em contato</h1>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptas quisquam accusamus possimus maiores eveniet tempore excepturi, dicta vel, explicabo officiis sunt similique, amet deserunt magnam expedita corrupti et dolores aliquid?</p>
-            <div class="form-row">
-                <div class="form-group col-md-6">
-                    <label for="input-nome">Nome</label>
-                    <input name="nome" type="text" class="form-control" id="input-nome" placeholder="Nome">
-                </div>
-                <div class="form-group col-md-6">
-                    <label for="input-email">E-mail</label>
-                    <input name="email" type="email" class="form-control" id="input-email" placeholder="E-mail">
-                </div>
-                <div class="form-group col-md-6">
-                    <label for="input-senha">Senha</label>
-                    <input name="senha" type="password" class="form-control" id="input-senha" placeholder="Senha">
-                </div>
-                <div class="form-group col-md-6">
-                    <label for="input-confirma">Confirma Senha</label>
-                    <input name="confirma_senha" type="password" class="form-control" id="input-confirma" placeholder="Senha">
-                </div>
-            </div>
-            <button type="submit" class="btn btn-primary">Enviar</button>
-        </form>
-
+    <div class="mt-5">
+      <h1>Localização</h1>
+      <p>Verifique a localização da nossa Biblioteca</p>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3656.983057080286!2d-46.64885008593059!3d-23.569051984679056!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce59be874e1f11%3A0x3b0b41a1b5ea3fd!2sBiblioteca!5e0!3m2!1spt-BR!2sbr!4v1565381574508!5m2!1spt-BR!2sbr" width="100%" height="450px" frameborder="0" allowfullscreen></iframe>
     </div>
+  </div>
 
+  <?php require_once("inc/footer.php") ?>
 </body>
 
 </html>

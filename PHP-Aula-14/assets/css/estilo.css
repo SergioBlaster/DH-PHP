@@ -1,3 +1,7 @@
-.carrousel-item img{
-    max-height: 600px;
+.carousel-item img {
+  max-height: 600px;
+}
+
+form textarea {
+  resize: none;
 }

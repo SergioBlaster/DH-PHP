@@ -1,21 +1,24 @@
 <?php
-require_once("../config/conn.php");
+  require_once("../config/conn.php");
 
-$nome = $_REQUEST["nome"];
-$email = $_REQUEST["email"];
-$senha = $_REQUEST["senha"];
-$confirma_senha = $_REQUEST["confirma_senha"];
+  $nome = $_REQUEST["nome"];
+  $email = $_REQUEST["email"];
+  $mensagem = $_REQUEST["mensagem"];
 
-$sql = "INSERT INTO usuarios (nome, email, senha) VALUES (:nome, :email, :senha)";
+  $sql = "INSERT INTO contatos (nome, email, mensagem) VALUES (:nome, :email, :mensagem)";
 
-$query = $db->prepare($sql);
+  $query = $db->prepare($sql);
 
-$salvou = $query->execute([
-    ":nome"=>$nome,
-    ":email"=>$email,
-    ":senha"=>$senha
-]);
+  $salvou = $query->execute([
+    ":nome" => $nome,
+    ":email" => $email,
+    ":mensagem" => $mensagem
+  ]);
 
-if (isset($salvou) && $salvou == true) {
-    echo "Salvo com sucesso";
-}
+  if(isset($salvou) && $salvou == true){
+    echo "Mensagem enviada com suceso";
+  } else { 
+    echo "Falha ao processar envio da mensagem";
+  }
+  
+?>
