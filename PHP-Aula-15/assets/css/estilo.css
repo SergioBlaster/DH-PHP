@@ -1,0 +1,24 @@
+.carousel-item img {
+  max-height: 600px;
+}
+
+.container form textarea {
+  resize: none;
+}
+
+div.name-user {
+  color: #fff;
+  font-size: 18px;
+}
+
+footer {
+  display: flex;
+}
+
+footer p {
+  color: #fff;
+  font-size: 18px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
